@@ -3,9 +3,16 @@ import CvPreview from "./components/cvPreview/cvPreview";
 
 export default function App() {
   return (
-    <div className="container">
-      <CvForm />
-      <CvPreview />
-    </div>
+    <>
+      <PageHeading />
+      <div className="container">
+        <CvForm />
+        <CvPreview />
+      </div>
+    </>
   );
+}
+
+function PageHeading() {
+  return <h1>CV Maker</h1>;
 }
