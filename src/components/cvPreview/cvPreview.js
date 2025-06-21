@@ -1,10 +1,10 @@
 import TopSectionCvPreview from "./topSectionCvPreview";
 
-export default function CvPreview({ name }) {
+export default function CvPreview({ name, aboutMeText }) {
   return (
     <div className="cv-preview">
       {/* ********** TOP SECTION ********** */}
-      <TopSectionCvPreview name={name} />
+      <TopSectionCvPreview name={name} aboutMeText={aboutMeText} />
 
       {/* ********** MIDDLE SECTION ********** */}
 

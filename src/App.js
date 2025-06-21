@@ -4,12 +4,18 @@ import CvPreview from "./components/cvPreview/cvPreview";
 
 export default function App() {
   const [name, setName] = useState("");
+  const [aboutMeText, setAboutMeText] = useState("");
   return (
     <>
       <PageHeading />
       <div className="container">
-        <CvForm name={name} setName={setName} />
-        <CvPreview name={name} />
+        <CvForm
+          name={name}
+          setName={setName}
+          aboutMeText={aboutMeText}
+          setAboutMeText={setAboutMeText}
+        />
+        <CvPreview name={name} aboutMeText={aboutMeText} />
       </div>
     </>
   );
