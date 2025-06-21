@@ -1,20 +1,10 @@
-export default function CvPreview() {
+import TopSectionCvPreview from "./topSectionCvPreview";
+
+export default function CvPreview({ name }) {
   return (
     <div className="cv-preview">
       {/* ********** TOP SECTION ********** */}
-
-      <section className="top-section">
-        <div className="cv-name-preview">Name Here</div>
-        <div className="about-me-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
-          nemo debitis consectetur sit soluta quasi deserunt aliquam incidunt
-          consequatur laborum culpa qui enim repudiandae placeat, velit amet rem
-          aperiam distinctio! Enim, odit sequi deserunt impedit possimus id
-          voluptates et labore saepe modi eveniet nemo soluta voluptate dolorum
-          facilis laboriosam distinctio. Natus repellat impedit error officia
-          quae facilis doloremque facere soluta.
-        </div>
-      </section>
+      <TopSectionCvPreview name={name} />
 
       {/* ********** MIDDLE SECTION ********** */}
 
