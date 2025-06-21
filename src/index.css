@@ -38,22 +38,17 @@ h1 {
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
-  gap: 2rem;
+  gap: 4rem;
   padding-bottom: 11.5rem;
+  max-width: 100rem;
+  margin: 0 auto;
 }
+
+/* ************ Form Inputs Styles ************** */
 
 .cv-form {
   min-width: 45rem;
   background-color: whitesmoke;
-  padding: 3rem;
-  border-radius: 0.3rem;
-  box-shadow: 0px 0px 19px 10px rgba(0, 0, 0, 0.1);
-}
-
-.cv-preview {
-  min-width: 45rem;
-  min-height: 65rem;
-  background-color: white;
   padding: 3rem;
   border-radius: 0.3rem;
   box-shadow: 0px 0px 19px 10px rgba(0, 0, 0, 0.1);
@@ -76,4 +71,130 @@ textarea {
 
 textarea {
   height: 10rem;
+}
+
+/* ************ Cv Preview Styles *********** */
+
+.cv-preview {
+  min-width: 45rem;
+  min-height: 65rem;
+  background-color: white;
+  padding: 3rem;
+  border-radius: 0.3rem;
+  box-shadow: 0px 0px 19px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.headings-preview {
+  font-family: var(--heading-font);
+  font-size: 1.7rem;
+  text-decoration: underline var(--heading-color);
+  padding: 0 0 1rem 1.8rem;
+  color: var(--heading-color);
+}
+
+.top-section {
+  display: flex;
+  flex-direction: column;
+  /* background-color: antiquewhite; */
+  height: 200px;
+}
+
+.cv-name-preview {
+  font-size: 3rem;
+  border-bottom: 2px solid var(--heading-color);
+  color: var(--text-color);
+  font-family: var(--heading-font);
+  padding: 0 1.5rem 0 1.5rem;
+}
+
+.about-me-text {
+  font-family: var(--text-font);
+  padding: 1rem 1.5rem 0 1.5rem;
+  text-wrap: balance;
+}
+
+.middle-section {
+  /* background-color: aquamarine; */
+  display: flex;
+  height: 200px;
+  margin: 2rem 0 3.1rem 0;
+}
+
+.contact-preview > span {
+  color: var(--text-color);
+}
+
+.contact-preview,
+.skills-preview {
+  width: 50%;
+  padding: 1rem;
+}
+
+.contact-preview > p,
+.skills-preview > p {
+  padding-left: 2.5rem;
+  font-family: var(--text-font);
+  line-height: 1.5;
+  font-size: 1.02rem;
+}
+
+.bottom-section {
+  /* background-color: bisque; */
+  height: 550px;
+  display: flex;
+}
+
+.education-preview {
+  width: 40%;
+  padding: 1rem;
+}
+
+.experience-preview {
+  width: 60%;
+  padding: 1rem 4rem 1rem 4rem;
+}
+
+.education-section-preview {
+  padding: 0.3rem 1rem 0.3rem 0.5rem;
+  margin: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--text-font);
+  border-left: 3px solid var(--heading-color);
+}
+
+.school-name {
+  font-weight: bold;
+}
+
+.experience-preview-section {
+  border-left: 3px solid var(--heading-color);
+  padding: 0.5rem 0 0.5rem 0.5rem;
+  margin: 2rem 0;
+}
+
+.experience-preview-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--text-font);
+}
+
+.company-name {
+  font-weight: bold;
+}
+
+.experience-preview-bottom {
+  padding: 0.7rem 0 0 0;
+}
+
+.experience-preview-bottom > p {
+  width: 100%;
+  max-height: 4rem;
+  font-family: var(--text-font);
+  font-size: 0.9rem;
+  text-wrap: balance;
 }
