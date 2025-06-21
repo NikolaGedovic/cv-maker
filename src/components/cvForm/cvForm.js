@@ -1,5 +1,9 @@
-import "./cvForm.css";
+import AboutMe from "./about-me";
 
 export default function CvForm() {
-  return <div className="cv-form">FORM</div>;
+  return (
+    <div className="cv-form">
+      <AboutMe />
+    </div>
+  );
 }
