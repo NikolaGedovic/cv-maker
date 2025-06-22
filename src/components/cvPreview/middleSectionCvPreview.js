@@ -3,6 +3,7 @@ export default function MiddleSectionCvPreview({
   email,
   adress,
   website,
+  skills = [],
 }) {
   return (
     <section className="middle-section">
@@ -19,11 +20,11 @@ export default function MiddleSectionCvPreview({
       </div>
       <div className="skills-preview">
         <h2 className="headings-preview">Skills</h2>
-        <p>-Skill</p>
-        <p>-Skill</p>
-        <p>-Skill</p>
-        <p>-Skill</p>
-        <p>-Skill</p>
+        {skills.length === 0 ? (
+          <p>-Skill</p>
+        ) : (
+          skills.map((skill, index) => <p key={index}>- {skill}</p>)
+        )}
       </div>
     </section>
   );

@@ -8,6 +8,7 @@ export default function CvPreview({
   email,
   adress,
   website,
+  skills,
 }) {
   return (
     <div className="cv-preview">
@@ -21,6 +22,7 @@ export default function CvPreview({
         email={email}
         adress={adress}
         website={website}
+        skills={skills}
       />
 
       {/* ********** BOTTOM SECTION ********** */}

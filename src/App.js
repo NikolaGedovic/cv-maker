@@ -9,6 +9,8 @@ export default function App() {
   const [email, setEmail] = useState("");
   const [adress, setAdress] = useState("");
   const [website, setWebsite] = useState("");
+  const [skills, setSkills] = useState([]);
+  const [currentSkill, setCurrentSkill] = useState("");
   return (
     <>
       <PageHeading />
@@ -26,6 +28,10 @@ export default function App() {
           setAdress={setAdress}
           website={website}
           setWebsite={setWebsite}
+          skills={skills}
+          setSkills={setSkills}
+          currentSkill={currentSkill}
+          setCurrentSkill={setCurrentSkill}
         />
         <CvPreview
           name={name}
@@ -34,6 +40,7 @@ export default function App() {
           email={email}
           adress={adress}
           website={website}
+          skills={skills}
         />
       </div>
     </>
