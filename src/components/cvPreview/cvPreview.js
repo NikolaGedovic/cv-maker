@@ -11,6 +11,7 @@ export default function CvPreview({
   website,
   skills,
   educationList,
+  experienceList,
 }) {
   return (
     <div className="cv-preview">
@@ -29,7 +30,10 @@ export default function CvPreview({
 
       {/* ********** BOTTOM SECTION ********** */}
 
-      <BottomSectionPreview educationList={educationList} />
+      <BottomSectionPreview
+        educationList={educationList}
+        experienceList={experienceList}
+      />
     </div>
   );
 }

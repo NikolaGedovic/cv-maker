@@ -1,6 +1,7 @@
 import AboutMe from "./aboutMeForm";
 import ContactForm from "./contactForm";
 import EducationForm from "./educationForm";
+import ExperienceForm from "./experienceForm";
 import SkillsForm from "./skillsForm";
 
 export default function CvForm({
@@ -24,6 +25,10 @@ export default function CvForm({
   setEducationList,
   currentEducation,
   setCurrentEducation,
+  experienceList,
+  setExperienceList,
+  currentExperience,
+  setCurrentExperience,
 }) {
   return (
     <div className="cv-form">
@@ -55,6 +60,13 @@ export default function CvForm({
         setEducationList={setEducationList}
         currentEducation={currentEducation}
         setCurrentEducation={setCurrentEducation}
+      />
+
+      <ExperienceForm
+        experienceList={experienceList}
+        setExperienceList={setExperienceList}
+        currentExperience={currentExperience}
+        setCurrentExperience={setCurrentExperience}
       />
     </div>
   );

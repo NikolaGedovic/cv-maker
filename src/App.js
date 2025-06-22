@@ -18,6 +18,14 @@ export default function App() {
     fromYear: "",
     toYear: "",
   });
+  const [experienceList, setExperienceList] = useState([]);
+  const [currentExperience, setCurrentExperience] = useState({
+    company: "",
+    position: "",
+    fromYearExperience: "",
+    toYearExperience: "",
+    whatYouDid: "",
+  });
   return (
     <>
       <PageHeading />
@@ -43,6 +51,10 @@ export default function App() {
           setEducationList={setEducationList}
           currentEducation={currentEducation}
           setCurrentEducation={setCurrentEducation}
+          experienceList={experienceList}
+          setExperienceList={setExperienceList}
+          currentExperience={currentExperience}
+          setCurrentExperience={setCurrentExperience}
         />
         <CvPreview
           name={name}
@@ -53,6 +65,7 @@ export default function App() {
           website={website}
           skills={skills}
           educationList={educationList}
+          experienceList={experienceList}
         />
       </div>
     </>

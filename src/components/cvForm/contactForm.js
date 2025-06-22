@@ -13,6 +13,7 @@ export default function ContactForm({
       <h2 className="form-section-heading">Contact</h2>
       <input
         value={phoneNum}
+        maxLength={15}
         type="tel"
         className="form-input"
         name="phoneNum"
@@ -25,6 +26,7 @@ export default function ContactForm({
       <input
         value={email}
         className="form-input"
+        maxLength={50}
         type="email"
         name="email"
         id="email"
@@ -36,6 +38,7 @@ export default function ContactForm({
       <input
         value={adress}
         className="form-input"
+        maxLength={100}
         type="text"
         name="adress"
         id="adress"
@@ -48,6 +51,7 @@ export default function ContactForm({
       <input
         value={website}
         className="form-input"
+        maxLength={50}
         type="text"
         name="website"
         id="website"

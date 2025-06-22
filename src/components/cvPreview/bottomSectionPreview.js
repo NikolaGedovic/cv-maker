@@ -1,4 +1,7 @@
-export default function BottomSectionPreview({ educationList }) {
+export default function BottomSectionPreview({
+  educationList,
+  experienceList,
+}) {
   return (
     <section className="bottom-section">
       {/* ******* Education ******** */}
@@ -29,59 +32,28 @@ export default function BottomSectionPreview({ educationList }) {
       <div className="experience-preview">
         <h2 className="headings-preview">Experience</h2>
 
-        <div className="experience-preview-section">
-          <div className="experience-preview-top">
-            <div>
-              <p className="company-name">Company</p>
-              <p>Position</p>
+        {experienceList.length === 0 ? (
+          <p className="no-experience">No experience added.</p>
+        ) : (
+          experienceList.map((exp, index) => (
+            <div className="experience-preview-section" key={index}>
+              <div className="experience-preview-top">
+                <div>
+                  <p className="company-name">{exp.company}</p>
+                  <p className="company-position">{exp.position}</p>
+                </div>
+                <div>
+                  <p className="company-years">
+                    {exp.fromYearExperience} - {exp.toYearExperience}
+                  </p>
+                </div>
+              </div>
+              <div className="experience-preview-bottom">
+                <p>{exp.whatYouDid}</p>
+              </div>
             </div>
-            <div>
-              <p>From - To</p>
-            </div>
-          </div>
-          <div className="experience-preview-bottom">
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit
-              possimus facere itaque placeat aliquid corporis autem, repudiandae
-            </p>
-          </div>
-        </div>
-
-        <div className="experience-preview-section">
-          <div className="experience-preview-top">
-            <div>
-              <p className="company-name">Company</p>
-              <p>Position</p>
-            </div>
-            <div>
-              <p>From - To</p>
-            </div>
-          </div>
-          <div className="experience-preview-bottom">
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit
-              possimus facere itaque placeat aliquid corporis autem, repudiandae
-            </p>
-          </div>
-        </div>
-
-        <div className="experience-preview-section">
-          <div className="experience-preview-top">
-            <div>
-              <p className="company-name">Company</p>
-              <p>Position</p>
-            </div>
-            <div>
-              <p>From - To</p>
-            </div>
-          </div>
-          <div className="experience-preview-bottom">
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit
-              possimus facere itaque placeat aliquid corporis autem, repudiandae
-            </p>
-          </div>
-        </div>
+          ))
+        )}
       </div>
     </section>
   );
