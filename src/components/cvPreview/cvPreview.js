@@ -1,6 +1,14 @@
+import MiddleSectionCvPreview from "./middleSectionCvPreview";
 import TopSectionCvPreview from "./topSectionCvPreview";
 
-export default function CvPreview({ name, aboutMeText }) {
+export default function CvPreview({
+  name,
+  aboutMeText,
+  phoneNum,
+  email,
+  adress,
+  website,
+}) {
   return (
     <div className="cv-preview">
       {/* ********** TOP SECTION ********** */}
@@ -8,23 +16,12 @@ export default function CvPreview({ name, aboutMeText }) {
 
       {/* ********** MIDDLE SECTION ********** */}
 
-      <section className="middle-section">
-        <div className="contact-preview">
-          <h2 className="headings-preview">Contact Info</h2>
-          <p>☎️ Phone Number</p>
-          <p>📨 Email@email.com</p>
-          <p>🏠 Adress</p>
-          <p>🛜 Website</p>
-        </div>
-        <div className="skills-preview">
-          <h2 className="headings-preview">Skills</h2>
-          <p>-Skill</p>
-          <p>-Skill</p>
-          <p>-Skill</p>
-          <p>-Skill</p>
-          <p>-Skill</p>
-        </div>
-      </section>
+      <MiddleSectionCvPreview
+        phoneNum={phoneNum}
+        email={email}
+        adress={adress}
+        website={website}
+      />
 
       {/* ********** BOTTOM SECTION ********** */}
 
