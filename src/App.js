@@ -11,6 +11,13 @@ export default function App() {
   const [website, setWebsite] = useState("");
   const [skills, setSkills] = useState([]);
   const [currentSkill, setCurrentSkill] = useState("");
+  const [educationList, setEducationList] = useState([]);
+  const [currentEducation, setCurrentEducation] = useState({
+    schoolName: "",
+    subject: "",
+    fromYear: "",
+    toYear: "",
+  });
   return (
     <>
       <PageHeading />
@@ -32,6 +39,10 @@ export default function App() {
           setSkills={setSkills}
           currentSkill={currentSkill}
           setCurrentSkill={setCurrentSkill}
+          educationList={educationList}
+          setEducationList={setEducationList}
+          currentEducation={currentEducation}
+          setCurrentEducation={setCurrentEducation}
         />
         <CvPreview
           name={name}
@@ -41,6 +52,7 @@ export default function App() {
           adress={adress}
           website={website}
           skills={skills}
+          educationList={educationList}
         />
       </div>
     </>
