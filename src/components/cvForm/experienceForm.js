@@ -42,10 +42,6 @@ export default function ExperienceForm({
         toYearExperience: "",
         whatYouDid: "",
       });
-    } else {
-      alert(
-        "Please fill all fields before adding and don't exceed 3 experiences."
-      );
     }
   };
 

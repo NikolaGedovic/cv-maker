@@ -4,7 +4,7 @@
   --bg-color: #d1d1e9;
   --btn-color: #6246ea;
   --text-color: #2b2c34;
-  --heading-color: #094067;
+  --heading-color: #08385a;
   --btn-font: #fffffe;
   --heading-font: "Inter", sans-serif;
   --text-font: "Lato", sans-serif;
@@ -276,4 +276,24 @@ textarea {
 
 .company-years {
   font-size: 0.8rem;
+}
+
+.download-cv {
+  width: 100%;
+  font-size: 1rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  margin-top: 4rem;
+  padding: 1rem;
+  background-color: var(--heading-color);
+  color: var(--btn-font);
+  font-family: var(--heading-font);
+  font-weight: bold;
+  border: none;
+}
+
+.download-cv:active {
+  background-color: #063252;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }

@@ -3,6 +3,7 @@ import ContactForm from "./contactForm";
 import EducationForm from "./educationForm";
 import ExperienceForm from "./experienceForm";
 import SkillsForm from "./skillsForm";
+import DownloadCv from "./downloadCv";
 
 export default function CvForm({
   name,
@@ -29,6 +30,7 @@ export default function CvForm({
   setExperienceList,
   currentExperience,
   setCurrentExperience,
+  handleDownload,
 }) {
   return (
     <div className="cv-form">
@@ -68,6 +70,7 @@ export default function CvForm({
         currentExperience={currentExperience}
         setCurrentExperience={setCurrentExperience}
       />
+      <DownloadCv handleDownload={handleDownload} />
     </div>
   );
 }
