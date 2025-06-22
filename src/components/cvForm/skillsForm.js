@@ -20,6 +20,8 @@ export default function SkillsForm({ skill, setSkill, skills, setSkills }) {
         placeholder="Add your skills"
         onChange={(e) => setSkill(e.target.value)}
         disabled={skills.length >= 5}
+        required
+        aria-required="true"
       />
       <button
         className="add-btn"

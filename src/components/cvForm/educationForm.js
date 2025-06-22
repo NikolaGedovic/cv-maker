@@ -47,6 +47,8 @@ export default function EducationForm({
         value={currentEducation.schoolName}
         onChange={handleChange}
         disabled={isDisabled}
+        required
+        aria-required="true"
       />
       <input
         type="text"
@@ -57,6 +59,8 @@ export default function EducationForm({
         value={currentEducation.subject}
         onChange={handleChange}
         disabled={isDisabled}
+        required
+        aria-required="true"
       />
       <input
         type="text"
@@ -67,6 +71,8 @@ export default function EducationForm({
         value={currentEducation.fromYear}
         onChange={handleChange}
         disabled={isDisabled}
+        required
+        aria-required="true"
       />
       <input
         type="text"
@@ -77,6 +83,8 @@ export default function EducationForm({
         value={currentEducation.toYear}
         onChange={handleChange}
         disabled={isDisabled}
+        required
+        aria-required="true"
       />
       <button
         className="add-btn"

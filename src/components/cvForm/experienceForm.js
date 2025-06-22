@@ -63,6 +63,8 @@ export default function ExperienceForm({
         value={currentExperience.company}
         onChange={handleChange}
         disabled={experienceList.length >= maxExperiences}
+        required
+        aria-required="true"
       />
       <input
         type="text"
@@ -73,6 +75,8 @@ export default function ExperienceForm({
         value={currentExperience.position}
         onChange={handleChange}
         disabled={experienceList.length >= maxExperiences}
+        required
+        aria-required="true"
       />
       <input
         type="text"
@@ -83,6 +87,8 @@ export default function ExperienceForm({
         value={currentExperience.fromYearExperience}
         onChange={handleChange}
         disabled={experienceList.length >= maxExperiences}
+        required
+        aria-required="true"
       />
       <input
         type="text"
@@ -93,6 +99,8 @@ export default function ExperienceForm({
         value={currentExperience.toYearExperience}
         onChange={handleChange}
         disabled={experienceList.length >= maxExperiences}
+        required
+        aria-required="true"
       />
       <textarea
         name="whatYouDid"
@@ -102,6 +110,8 @@ export default function ExperienceForm({
         value={currentExperience.whatYouDid}
         onChange={handleChange}
         disabled={experienceList.length >= maxExperiences}
+        required
+        aria-required="true"
       />
       <button
         className="add-btn"
