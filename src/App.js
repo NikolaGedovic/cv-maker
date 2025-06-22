@@ -104,7 +104,14 @@ function PageHeading() {
 function Footer() {
   return (
     <footer>
-      Made By <span>Nikola Gedovic</span>
+      Made by{" "}
+      <a
+        href="https://github.com/NikolaGedovic"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Nikola Gedović
+      </a>
     </footer>
   );
 }
