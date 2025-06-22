@@ -161,14 +161,21 @@ textarea {
   color: var(--text-color);
 }
 
-.contact-preview,
-.skills-preview {
+.contact-preview {
   width: 50%;
   padding: 1rem;
 }
 
-.contact-preview > p,
-.skills-preview > p {
+.skills-preview {
+  padding: 0.7rem 0;
+  margin-left: 1.5rem;
+}
+
+.skills-preview > ul {
+  margin-left: 1.25rem;
+}
+
+.contact-preview > p {
   padding-left: 2.5rem;
   font-family: var(--text-font);
   line-height: 1.3;

@@ -27,7 +27,9 @@ export default function MiddleSectionCvPreview({
         ) : (
           <ul>
             {skills.map((skill, index) => (
-              <li key={index}>{skill}</li>
+              <li className="skills-preview" key={index}>
+                {skill}
+              </li>
             ))}
           </ul>
         )}
